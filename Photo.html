@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photo Fetcher</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Photo Fetcher</h1>
-    </header>
+    <section class="main-container">
+      <p>Photo Fetcher</p>
 
-    <button onclick="grayscale()">Grayscale</button>
-    <main>
-      <div style="text-align: center">
-        <img src="img1.jpg" alt="Img1" height="250" width="250" />
-        <img src="img2.jpg" alt="Img2" height="250" width="250" />
-      </div>
-      <div style="text-align: center">
-        <img src="img3.jpg" alt="Img3" height="250" width="250" />
-        <img src="img4.jpg" alt="Img4" height="250" width="250 " />
+      <div class="controls">
+        <div class="checkbox-conatiner">
+          <input type="checkbox" id="toggleSwitch" />
+          <label for="toggleSwitch">Make photos grayscale</label>
+        </div>
+        <button id="loadMoreBtn">Fetch New Photos</button>
       </div>
 
-      <div id="gallery"></div>
-      <button onclick="fetchPhotos()">Fetch Photos</button>
-    </main>
+      <div class="photo-container" id="photoContainer"></div>
+    </section>
 
     <script src="script.js"></script>
   </body>
