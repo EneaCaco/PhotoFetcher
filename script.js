@@ -5,7 +5,7 @@ function fetchPhotos() {
   photoContainer.innerHTML = "";
 
   for (let i = 0; i < 4; i++) {
-    fetch("https://picsum.photos/367/367")
+    fetch("https://picsum.photos/367/250")
       .then((response) => {
         if (response.ok) {
           return response.url;
